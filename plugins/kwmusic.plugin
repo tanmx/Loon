@@ -1,1 +1,5 @@
-
+#!name= 酷我vip unlock
+#!desc= kuwomusic vip
+#!icon= https://raw.githubusercontent.com/tanmx/Loon/main/images/kuwo.png
+[Script]
+http-response ^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).* requires-body=1,script-path=https://raw.githubusercontent.com/tanmx/Loon/main/scripts/kuwo/kw.js
