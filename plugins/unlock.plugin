@@ -3,9 +3,8 @@
 #!icon= https://raw.githubusercontent.com/tanmx/Loon/main/images/unlock.png
 
 [Script]
-http-response ^https?:\/\/.*\.com\/api\/app\/user\/info$ requires-body=1,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/PornComicsCrack.js
-http-request ^https?:\/\/.*\.com\/api\/app\/media script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/PornVideosCrack.js
-
+#麻豆
+http-request ^https?:\/\/.*\/api\/app\/media\/m3u8\/.*\.m3u8 script-path=https://github.com/yqc007/QuantumultX/raw/master/mdsqallcrack.js
 
 [MITM]
-hostname = zjgeo.eqobc.com, xnour.xonap.com, opzzy.kefsww.com, tqrbq.mpckv.com
+hostname = ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com
