@@ -1,0 +1,15 @@
+#!name=ADBlock
+#!desc=一些自用软件去广告
+#!icon= https://raw.githubusercontent.com/tanmx/Loon/main/images/adblock.svg
+
+[Script]
+# > 酷安完美去广告@kk pp
+http-response ^https?:\/\/api\.coolapk\.com\/v6\/(feed\/(replyList|detail)|main\/indexV8|dataList) script-path=https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/coolapk.js,requires-body=true
+
+[URL Rewrite]
+# 酷安瀑布流广告
+^https?://api-access\.pangolin-sdk-toutiao\.com/api/ad/union/sdk reject
+^https?:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch reject-dict
+
+[MITM]
+hostname = api-access.pangolin-sdk-toutiao.com,api.coolapk.com
