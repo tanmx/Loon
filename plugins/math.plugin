@@ -1,0 +1,8 @@
+#!name= math 去广告
+#!desc= 心无旁骛学数学
+#!icon= https://raw.githubusercontent.com/tanmx/Loon/main/images/math.webp
+[Script]
+http-response ^https://files.yuchenglw.com requires-body=1,script-path=https://raw.githubusercontent.com/tanmx/Loon/main/scripts/math/sssp.js
+
+[MIMT] 
+hostname = files.yuchenglw.com
