@@ -4,5 +4,5 @@
 [Script]
 http-response ^https:\/\/files\.yuchenglw\.com requires-body=true,script-path=https://raw.githubusercontent.com/tanmx/Loon/main/scripts/math/sssp.js
 
-[MIMT] 
+[MITM] 
 hostname = files.yuchenglw.com
