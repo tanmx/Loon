@@ -9,5 +9,8 @@ http-request ^https?:\/\/.*\/api\/app\/media\/m3u8\/.*\.m3u8 script-path=https:/
 #cutisan
 http-response ^https?:\/\/cutisanapi\.imuuzi\.com\/api\/(Index\/index|Home\/index) requires-body=true,script-path=https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/Cutisan.js
 
+#克拉壁纸
+http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ requires-body=true,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/KLBZ.js
+
 [MITM]
-hostname = ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com,cutisanapi.imuuzi.com
+hostname = buy.itunes.apple.com,ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com,cutisanapi.imuuzi.com
