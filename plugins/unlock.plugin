@@ -13,7 +13,7 @@ http-response ^https?:\/\/cutisanapi\.imuuzi\.com\/api\/(Index\/index|Home\/inde
 http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ requires-body=true,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/KLBZ.js
 
 #西窗烛
-http-response ^https:\/\/lchttpapi\.xczim\.com requires-body=true,script-path= https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/xcz.js
+http-response ^https:\/\/lchttpapi\.xczim\.com requires-body=true,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/xcz.js
 
 [MITM]
 hostname = lchttpapi.xczim.com,lchttpapi.xczim.com,lchttpapi.xczim.com,lchttpapi.xczim.com,buy.itunes.apple.com,ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com,cutisanapi.imuuzi.com
