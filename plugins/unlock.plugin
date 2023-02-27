@@ -6,5 +6,18 @@
 #麻豆
 http-request ^https?:\/\/.*\/api\/app\/media\/m3u8\/.*\.m3u8 script-path=https://github.com/yqc007/QuantumultX/raw/master/mdsqallcrack.js
 
+#cutisan
+http-response ^https?:\/\/cutisanapi\.imuuzi\.com\/api\/(Index\/index|Home\/index) requires-body=true,script-path=https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/Cutisan.js
+
+#克拉壁纸
+http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ requires-body=true,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/KLBZ.js
+
+#西窗烛
+http-response ^https:\/\/lchttpapi\.xczim\.com requires-body=true,script-path=https://github.com/ddgksf2013/dev/raw/main/XiChuangZhuProCrack.js
+
+#storm sniffer
+http-request ^http[s]?:\/\/api\.x-storm\.com(:\d{2,5})?\/app/.+$ script-path=https://raw.githubusercontent.com/paynexss/Scripts/main/Scripts/StormSnifferHeader.js
+http-response ^http[s]?:\/\/api\.x-storm\.com(:\d{2,5})?\/app/((user-profile\/)|(auth-device\/list\/))$ script-path=https://raw.githubusercontent.com/paynexss/Scripts/main/Scripts/StormSnifferCrack.js, requires-body=true
+
 [MITM]
-hostname = ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com
+hostname = *.x-storm.com,lchttpapi.xczim.com,lchttpapi.xczim.com,lchttpapi.xczim.com,lchttpapi.xczim.com,buy.itunes.apple.com,ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com,cutisanapi.imuuzi.com
