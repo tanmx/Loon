@@ -16,7 +16,8 @@ http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ requires-body=
 http-response ^https:\/\/lchttpapi\.xczim\.com requires-body=true,script-path=https://github.com/ddgksf2013/dev/raw/main/XiChuangZhuProCrack.js
 
 # > 糖心VLog破解全部视频
-http-request ^https?:\/\/txh01*\.com\/h5\/m3u8\?url=\/media2\/m3u8-preview\/.+ script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/TxVLogAllCrack.js, tag=TxVLogAllCrack_12
+http-request ^https?:\/\/txh016\.com\/h5\/m3u8\?url=\/media2\/m3u8-preview\/.+ script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/TxVLogAllCrack.js
+http-request ^https?:\/\/txh017\.com\/h5\/m3u8\?url=\/media2\/m3u8-preview\/.+ script-path=https://raw.githubusercontent.com/tanmx/Loon/main/scripts/txvlog/TxVLogAllCrack.js
 
 [MITM]
 hostname = txh01*.com,lchttpapi.xczim.com,lchttpapi.xczim.com,lchttpapi.xczim.com,lchttpapi.xczim.com,buy.itunes.apple.com,ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com,cutisanapi.imuuzi.com
