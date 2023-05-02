@@ -12,7 +12,7 @@ http-response ^https:\/\/api-drive\.mypikpak\.com\/vip\/v\d\/vip\/info script-pa
 
 # > 糖心VLog破解全部视频
 http-request ^https?:\/\/txh016\.com\/h5\/m3u8\?url=\/media2\/m3u8-preview\/.+ script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/TxVLogAllCrack.js
-http-request ^https?:\/\/txh017\.com\/h5\/m3u8\?url=\/media2\/m3u8-preview\/.+ script-path=https://raw.githubusercontent.com/tanmx/Loon/main/scripts/txvlog/TxVLogAllCrack.js
+http-request ^https?:\/\/txh018\.com\/h5\/m3u8\?url=\/media2\/m3u8-preview\/.+ script-path=https://raw.githubusercontent.com/tanmx/Loon/main/scripts/txvlog/TxVLogAllCrack.js
 
 #西窗烛
 http-response ^https:\/\/lchttpapi\.xczim\.com requires-body=true,script-path=https://github.com/ddgksf2013/dev/raw/main/XiChuangZhuProCrack.js
