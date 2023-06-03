@@ -3,6 +3,7 @@
 #!icon= https://raw.githubusercontent.com/tanmx/Loon/main/images/adblock.png
 
 [Script]
+
 #keep
 # > 我的页面去推广
 http-response ^https?:\/\/api\.gotokeep\.com\/athena\/v\d\/people\/my$ script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js, requires-body=true, timeout=60 ,tag=keepStyle_37
@@ -19,10 +20,20 @@ http-response https://api.gotokeep.com/nuocha/course/v2/\w+/preview script-path=
 # > 我的运动页面去除下方推荐
 http-response https://api.gotokeep.com/sportpage/sport/v3/mysport script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js, requires-body=true, timeout=60 ,tag=keepStyle_45
 
-# > 酷安完美去广告@kk pp
-http-response ^https?:\/\/api\.coolapk\.com\/v6\/(feed\/(replyList|detail)|main\/indexV8|dataList) script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/coolapk.js,requires-body=true
+# > 酷安_推广广告@ddgksf2013
+http-response ^https?:\/\/api.coolapk.com\/v6\/dataList script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, timeout=60 ,tag=coolapk_16
+
+# > 酷安_首页广告@ddgksf2013
+http-response ^https?:\/\/api.coolapk.com\/v6\/main\/indexV8 script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, timeout=60 ,tag=coolapk_18
+
+# > 酷安_评论广告@ddgksf2013
+http-response ^https?:\/\/api.coolapk.com\/v6\/feed\/replyList script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, timeout=60 ,tag=coolapk_20
+
+# > 酷安_商品推广@ddgksf2013
+http-response ^https?:\/\/api.coolapk.com\/v6\/feed\/detail script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, timeout=60 ,tag=coolapk_22
 
 [URL Rewrite]
+
 #keep
 # > 屏蔽部分启动弹窗
 ^https?:\/\/api\.gotokeep\.com\/kprime\/v\d\/popups\/primeGuide - reject
@@ -45,11 +56,8 @@ http-response ^https?:\/\/api\.coolapk\.com\/v6\/(feed\/(replyList|detail)|main\
 # > 屏蔽更新
 ^https?:\/\/api\.gotokeep\.com\/anno\/v\d\/upgrade\/check - reject
 
-# 酷安瀑布流广告
-^https?://api-access\.pangolin-sdk-toutiao\.com/api/ad/union/sdk reject
-^https?:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch reject-dict
-
-
+# > 酷安_屏蔽热词@ddgksf2013
+^https?:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch - reject-dict
 
 
 
