@@ -3,10 +3,48 @@
 #!icon= https://raw.githubusercontent.com/tanmx/Loon/main/images/adblock.png
 
 [Script]
+#keep
+# > 我的页面去推广
+http-response ^https?:\/\/api\.gotokeep\.com\/athena\/v\d\/people\/my$ script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js, requires-body=true, timeout=60 ,tag=keepStyle_37
+
+# > 应用底部栏净化
+http-response ^https?:\/\/api\.gotokeep\.com\/config\/v\d\/basic script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js, requires-body=true, timeout=60 ,tag=keepStyle_39
+
+# > 发现页处理
+http-response https://api.gotokeep.com/homepage/v\d/tab script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js, requires-body=true, timeout=60 ,tag=keepStyle_41
+
+# > 课程预览页广告
+http-response https://api.gotokeep.com/nuocha/course/v2/\w+/preview script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js, requires-body=true, timeout=60 ,tag=keepStyle_43
+
+# > 我的运动页面去除下方推荐
+http-response https://api.gotokeep.com/sportpage/sport/v3/mysport script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js, requires-body=true, timeout=60 ,tag=keepStyle_45
+
 # > 酷安完美去广告@kk pp
 http-response ^https?:\/\/api\.coolapk\.com\/v6\/(feed\/(replyList|detail)|main\/indexV8|dataList) script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/coolapk.js,requires-body=true
 
 [URL Rewrite]
+#keep
+# > 屏蔽部分启动弹窗
+^https?:\/\/api\.gotokeep\.com\/kprime\/v\d\/popups\/primeGuide - reject
+# > 屏蔽开屏广告请求
+^https?:\/\/kad\.gotokeep\.com\/op-engine-webapp\/v\d\/ad - reject
+# > 屏蔽青少年弹窗
+^https?:\/\/api.gotokeep.com/cauchy/growth/init - reject
+# > 屏蔽搜索栏自动填充词
+^https?:\/\/api\.gotokeep\.com\/search\/v\d\/default\/keyword\/list - reject
+# > 屏蔽热词
+^https?:\/\/api\.gotokeep\.com\/search\/v\d\/hotword\/list - reject
+# > 屏蔽hotCourse
+^https?:\/\/api\.gotokeep\.com\/search\/v\d\/hotCourse\/list - reject
+# > 屏蔽adwebapp
+^https?:\/\/api\.gotokeep\.com\/op-engine-webapp\/v\d\/ad - reject
+# > 屏蔽广告预加载
+^https?:\/\/api\.gotokeep\.com\/ads\/v\d\/ads\/preload - reject
+# > 屏蔽adbox
+^https?:\/\/api\.gotokeep\.com\/training\/box\/config - reject
+# > 屏蔽更新
+^https?:\/\/api\.gotokeep\.com\/anno\/v\d\/upgrade\/check - reject
+
 # 酷安瀑布流广告
 ^https?://api-access\.pangolin-sdk-toutiao\.com/api/ad/union/sdk reject
 ^https?:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch reject-dict
@@ -16,4 +54,4 @@ http-response ^https?:\/\/api\.coolapk\.com\/v6\/(feed\/(replyList|detail)|main\
 
 
 [MITM]
-hostname = api-access.pangolin-sdk-toutiao.com,api.coolapk.com
+hostname = api.gotokeep.com,kad.gotokeep.com,api-access.pangolin-sdk-toutiao.com,api.coolapk.com
