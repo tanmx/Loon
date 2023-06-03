@@ -6,31 +6,31 @@
 
 #keep
 # > 我的页面去推广
-http-response ^https?:\/\/api\.gotokeep\.com\/athena\/v\d\/people\/my$ script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js, requires-body=true, timeout=60 ,tag=keepStyle_37
+http-response ^https?:\/\/api\.gotokeep\.com\/athena\/v\d\/people\/my$ script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js, requires-body=true, timeout=60 ,tag=我的页面去推广
 
 # > 应用底部栏净化
-http-response ^https?:\/\/api\.gotokeep\.com\/config\/v\d\/basic script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js, requires-body=true, timeout=60 ,tag=keepStyle_39
+http-response ^https?:\/\/api\.gotokeep\.com\/config\/v\d\/basic script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js, requires-body=true, timeout=60 ,tag=应用底部栏净化
 
 # > 发现页处理
-http-response https://api.gotokeep.com/homepage/v\d/tab script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js, requires-body=true, timeout=60 ,tag=keepStyle_41
+http-response https://api.gotokeep.com/homepage/v\d/tab script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js, requires-body=true, timeout=60 ,tag=发现页处理
 
 # > 课程预览页广告
-http-response https://api.gotokeep.com/nuocha/course/v2/\w+/preview script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js, requires-body=true, timeout=60 ,tag=keepStyle_43
+http-response https://api.gotokeep.com/nuocha/course/v2/\w+/preview script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js, requires-body=true, timeout=60 ,tag=课程预览页广告
 
 # > 我的运动页面去除下方推荐
-http-response https://api.gotokeep.com/sportpage/sport/v3/mysport script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js, requires-body=true, timeout=60 ,tag=keepStyle_45
+http-response https://api.gotokeep.com/sportpage/sport/v3/mysport script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js, requires-body=true, timeout=60 ,tag=我的运动页面去除下方推荐
 
 # > 酷安_推广广告@ddgksf2013
-http-response ^https?:\/\/api.coolapk.com\/v6\/dataList script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, timeout=60 ,tag=coolapk_16
+http-response ^https?:\/\/api.coolapk.com\/v6\/dataList script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, timeout=60 ,tag=酷安_推广广告
 
 # > 酷安_首页广告@ddgksf2013
-http-response ^https?:\/\/api.coolapk.com\/v6\/main\/indexV8 script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, timeout=60 ,tag=coolapk_18
+http-response ^https?:\/\/api.coolapk.com\/v6\/main\/indexV8 script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, timeout=60 ,tag=酷安_首页广告
 
 # > 酷安_评论广告@ddgksf2013
-http-response ^https?:\/\/api.coolapk.com\/v6\/feed\/replyList script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, timeout=60 ,tag=coolapk_20
+http-response ^https?:\/\/api.coolapk.com\/v6\/feed\/replyList script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, timeout=60 ,tag=酷安_评论广告
 
 # > 酷安_商品推广@ddgksf2013
-http-response ^https?:\/\/api.coolapk.com\/v6\/feed\/detail script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, timeout=60 ,tag=coolapk_22
+http-response ^https?:\/\/api.coolapk.com\/v6\/feed\/detail script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, timeout=60 ,tag=酷安_商品推广
 
 [URL Rewrite]
 
