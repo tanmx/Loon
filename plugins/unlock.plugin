@@ -3,6 +3,9 @@
 #!icon= https://raw.githubusercontent.com/tanmx/Loon/main/images/unlock.png
 
 [Script]
+#彩云天气vip token
+http-response ^https:\/\/biz\.cyapi\.cn\/v\d\/(user\?app_name=weather|visitors|login_by_code)$ script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js, requires-body=true, timeout=60 ,tag=caiyun
+
 #海角
 http-response ^http[s]?:\/\/.*(haijiao|hj).+api\/topic\/(\d+)$ script-path=https://raw.githubusercontent.com/tanmx/Loon/main/scripts/haijiao/haijiao.js, requires-body=true, timeout=60
 
@@ -43,4 +46,4 @@ http-request ^https?:\/\/.*\/api\/app\/media\/m3u8\/.*\.m3u8 script-path=https:/
 ^http[s]?.+audid-api.taobao.com - reject
 
 [MITM]
-hostname =  *hj*,*haijiao*,180.153.*.*,*xima*,*xmcdn*,*.ximalaya.com,*.xmcdn.com,180.153.255.*,180.153.140.*,180.153.250.*,114.80.99.*,114.80.139.237,114.80.161.29,1.62.62.64,51*.com, api-drive.mypikpak.com, txh01*.com,lchttpapi.xczim.com,lchttpapi.xczim.com,lchttpapi.xczim.com,lchttpapi.xczim.com,buy.itunes.apple.com,ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com,cutisanapi.imuuzi.com
+hostname =  biz.cyapi.cn,*hj*,*haijiao*,180.153.*.*,*xima*,*xmcdn*,*.ximalaya.com,*.xmcdn.com,180.153.255.*,180.153.140.*,180.153.250.*,114.80.99.*,114.80.139.237,114.80.161.29,1.62.62.64,51*.com, api-drive.mypikpak.com, txh01*.com,lchttpapi.xczim.com,lchttpapi.xczim.com,lchttpapi.xczim.com,lchttpapi.xczim.com,buy.itunes.apple.com,ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com,cutisanapi.imuuzi.com
