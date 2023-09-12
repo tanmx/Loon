@@ -3,9 +3,6 @@
 #!icon= https://raw.githubusercontent.com/tanmx/Loon/main/images/adblock.png
 
 [Script]
-#漫画大全广告
-^https?:\/\/res.chuangke.tv\/ad\/ reject
-
 #keep
 # > 我的页面去推广
 http-response ^https?:\/\/api\.gotokeep\.com\/athena\/v\d\/people\/my$ script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js, requires-body=true, timeout=60 ,tag=我的页面去推广
@@ -35,7 +32,8 @@ http-response ^https?:\/\/api.coolapk.com\/v6\/feed\/replyList script-path=https
 http-response ^https?:\/\/api.coolapk.com\/v6\/feed\/detail script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, timeout=60 ,tag=酷安_商品推广
 
 [URL Rewrite]
-
+#漫画大全广告
+^https?:\/\/res.chuangke.tv\/ad\/ reject
 #keep
 # > 屏蔽部分启动弹窗
 ^https?:\/\/api\.gotokeep\.com\/kprime\/v\d\/popups\/primeGuide - reject
