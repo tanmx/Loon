@@ -33,8 +33,10 @@ http-response ^https?:\/\/api.coolapk.com\/v6\/feed\/detail script-path=https://
 
 [URL Rewrite]
 #漫画大全广告
-^https?:\/\/res.chuangke.tv\/ad\/ - reject-img
-^https?:\/\/c-res.chuangke.tv\/ad\/ - reject-img
+^https?:\/\/res.chuangke.tv\/ad\/ - reject
+^https?:\/\/c-res.chuangke.tv\/ad\/ - reject
+^https?:\/\/conf.chuangke.tv\/v4\/ad\/ - reject
+
 #keep
 # > 屏蔽部分启动弹窗
 ^https?:\/\/api\.gotokeep\.com\/kprime\/v\d\/popups\/primeGuide - reject
