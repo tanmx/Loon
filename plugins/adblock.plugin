@@ -3,6 +3,8 @@
 #!icon= https://raw.githubusercontent.com/tanmx/Loon/main/images/adblock.png
 
 [Script]
+#漫画大全广告
+^https?:\/\/res.chuangke.tv\/ad\/ reject
 
 #keep
 # > 我的页面去推广
@@ -62,4 +64,4 @@ http-response ^https?:\/\/api.coolapk.com\/v6\/feed\/detail script-path=https://
 
 
 [MITM]
-hostname = api.gotokeep.com,kad.gotokeep.com,api-access.pangolin-sdk-toutiao.com,api.coolapk.com
+hostname = res.chuangke.tv,api.gotokeep.com,kad.gotokeep.com,api-access.pangolin-sdk-toutiao.com,api.coolapk.com
