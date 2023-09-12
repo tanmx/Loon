@@ -34,7 +34,7 @@ http-response ^https?:\/\/api.coolapk.com\/v6\/feed\/detail script-path=https://
 [URL Rewrite]
 #漫画大全广告
 ^https?:\/\/res.chuangke.tv\/ad\/ - reject
-^https?:\/\/c-res.chuangke.tv\/ad\/ - reject
+^https?:\/\/c-res.chuangke.tv\/qr\/ - reject
 ^https?:\/\/conf.chuangke.tv\/v4\/ad\/ - reject
 
 #keep
