@@ -36,6 +36,7 @@ http-response ^https?:\/\/api.coolapk.com\/v6\/feed\/detail script-path=https://
 ^https?:\/\/res.chuangke.tv\/ad\/ - reject-img
 ^https?:\/\/c-res.chuangke.tv\/qr\/ - reject-img
 ^https?:\/\/conf.chuangke.tv\/v4\/ad\/ - reject-dict
+^https?:\/\/conf.chuangke.tv\/v4\/ios\/ - reject-dict
 
 #keep
 # > 屏蔽部分启动弹窗
