@@ -19,19 +19,22 @@ http-response https://api.gotokeep.com/nuocha/course/v2/\w+/preview script-path=
 # > 我的运动页面去除下方推荐
 http-response https://api.gotokeep.com/sportpage/sport/v3/mysport script-path=https://github.com/ddgksf2013/Scripts/raw/master/keepStyle.js, requires-body=true, timeout=60 ,tag=我的运动页面去除下方推荐
 
+# > 酷安_开屏广告@ddgksf2013
+http-response ^https?:\/\/api.coolapk.com\/v6\/main\/init script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, timeout=60 ,tag=coolapk开屏
+
 # > 酷安_推广广告@ddgksf2013
-http-response ^https?:\/\/api.coolapk.com\/v6\/dataList script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, timeout=60 ,tag=酷安_推广广告
+http-response ^https?:\/\/api.coolapk.com\/v6\/dataList script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, timeout=60 ,tag=coolapk推广
 
 # > 酷安_首页广告@ddgksf2013
-http-response ^https?:\/\/api.coolapk.com\/v6\/main\/indexV8 script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, timeout=60 ,tag=酷安_首页广告
+http-response ^https?:\/\/api.coolapk.com\/v6\/main\/indexV8 script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, timeout=60 ,tag=coolapk首页
 
 # > 酷安_评论广告@ddgksf2013
-http-response ^https?:\/\/api.coolapk.com\/v6\/feed\/replyList script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, timeout=60 ,tag=酷安_评论广告
+http-response ^https?:\/\/api.coolapk.com\/v6\/feed\/replyList script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, timeout=60 ,tag=coolapk评论
 
 # > 酷安_商品推广@ddgksf2013
-http-response ^https?:\/\/api.coolapk.com\/v6\/feed\/detail script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, timeout=60 ,tag=酷安_商品推广
+http-response ^https?:\/\/api.coolapk.com\/v6\/feed\/detail script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, requires-body=true, timeout=60 ,tag=coolapk商品推广
 
-[URL Rewrite]
+[Rewrite]
 #漫画大全广告
 ^https?:\/\/res.chuangke.tv\/ad\/ - reject-img
 ^https?:\/\/c-res.chuangke.tv\/qr\/ - reject-img
@@ -62,7 +65,6 @@ http-response ^https?:\/\/api.coolapk.com\/v6\/feed\/detail script-path=https://
 
 # > 酷安_屏蔽热词@ddgksf2013
 ^https?:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch - reject-dict
-
 
 
 [MITM]
