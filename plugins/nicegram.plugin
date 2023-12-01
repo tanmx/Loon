@@ -1,11 +1,12 @@
 #!name=Nicegram会员
 #!desc=解锁Nicegram会员(2022.07.15)
 #!openUrl=https://github.com/I-am-R-E/Functional-Store-Hub/tree/Master/Nicegram
+#!homepage=https://ybnet.ga
 #!author=@R·E https://t.me/Functional_Store_Hub
-#!icon= https://raw.githubusercontent.com/tanmx/Loon/main/images/nicegram.png
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/nicegram.png
 
 [Script]
-http-response ^https?:\/\/restore-access\.indream\.app\/restoreAccess\?id=\w+$ script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/Nicegram/Script/Nicegram.js, requires-body=true, timeout=10, tag=Nicegram会员
+http-response https://nicegram.cloud/api/v6/user/info script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/Nicegram.js, requires-body=true, timeout=60 ,tag=Nicegram
 
 [MITM]
-hostname = restore-access.indream.app
+hostname = nicegram.cloud
