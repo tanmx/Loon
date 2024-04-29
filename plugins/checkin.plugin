@@ -1,0 +1,46 @@
+#!name= checkin 获取 cookies
+#!desc= 各种签到获取cookie
+#!icon= https://github.com/tanmx/pic/blob/main/checkin/yuanshen.png?raw=true
+
+[Script]
+#夸克
+http-response ^https:\/\/drive-pc\.quark\.cn\/1\/clouddrive\/file\/sort script-path=https://gist.githubusercontent.com/Sliverkiss/1589f69e675019b0b685a57a89de9ea5/raw/quarkV2.js, requires-body=true, timeout=60, tag=夸克网盘获取token
+http-response ^https:\/\/coral2\.quark\.cn\/task\/trigger script-path=https://gist.githubusercontent.com/Sliverkiss/1589f69e675019b0b685a57a89de9ea5/raw/quarkV2.js, requires-body=true, timeout=60, tag=夸克网盘福利日常收录任务
+http-request ^https:\/\/coral2\.quark\.cn\/quark\/(carbon|welfare)\/(v1|v2)\/signIn script-path=https://gist.githubusercontent.com/Sliverkiss/1589f69e675019b0b685a57a89de9ea5/raw/quarkV2.js, requires-body=true, timeout=60, tag=夸克网盘空间签到收录任务
+http-request ^https:\/\/coral2\.quark\.cn\/quark\/welfare\/v2\/sleep\/trigger script-path=https://gist.githubusercontent.com/Sliverkiss/1589f69e675019b0b685a57a89de9ea5/raw/quarkV2.js, requires-body=true, timeout=60, tag=夸克网盘睡眠打卡收录任务
+
+#蜜雪冰城
+http-response ^https:\/\/mxsa\.mxbc\.net\/api\/v1\/customer\/info script-path=https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js, requires-body=true, timeout=60, tag=蜜雪冰城获取token
+
+#龙湖天街
+http-request ^https?:\/\/gw2c\-hw\-open\.longfor\.com\/lmarketing\-task\-api\-mvc\-prod\/openapi\/task\/v1\/signature\/clock script-path=https://raw.githubusercontent.com/leiyiyan/resource/main/script/lhtj/lhtj.js, timeout=60, tag=龙湖天街获取Cookie
+
+#95598
+http-request ^https?:\/\/osg-open\.sgcc\.com\.cn\/osg-open-p0001\/member\/c5\/f05 script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/95598/95598.js, timeout=10, tag=网上国网获取 OpenID
+
+#霸王茶姬
+http-request ^https:\/\/(webapi|qmwebapi)\.qmai\.cn\/web\/(catering|catering2-apiserver)\/crm\/points-info script-path=https://gist.githubusercontent.com/Sliverkiss/4984f7f34d6df8bcdd1e13ecac4bba51/raw/bwcj.js, timeout=10, tag=霸王茶姬获取token
+
+#胖乖生活
+http-request ^https:\/\/userapi\.qiekj\.com\/wechat\/unionId\/login script-path=https://gist.githubusercontent.com/Sliverkiss/845cf469e4762afdc83c3949be006609/raw/pgsh.js, requires-body=true, timeout=10, enabled=false, tag=pgsh.js
+
+#高德打车
+http-response ^https:\/\/(m5(|-zb)|dache)\.amap\.com\/(ws\/yuece\/(act|openapi\/activity\/current)\/query|common\/(alipaymini|wxmini)\?_ENCRYPT=) script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, requires-body=true, timeout=60, enabled=false, tag=高德打车获取ck
+
+#bing
+http-request ^https:\/\/rewards\.bing\.com script-path=https://raw.githubusercontent.com/mw418/Loon/main/script/bingPoint.js, timeout=10, enabled=false, tag=Bing积分cookie
+
+# 茅台Token
+http-request ^https:\/\/app\.moutai519\.com\.cn\/xhr\/front\/mall\/message\/unRead\/query script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/i-maotai.js, timeout=10, tag=茅台Token
+
+#捷停车
+http-request ^https:\/\/sytgate\.jslife\.com\.cn\/core-gateway\/order\/carno\/pay\/info script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js, requires-body=true, timeout=10, enabled=false, tag=获取捷停车userId
+
+#阿里云盘签到
+http-request ^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, requires-body=true, timeout=10, tag=阿里云盘获取cookie
+
+#中国联通
+http-request https:\/\/m\.client\.10010\.com\/serviceimportantbusiness\/smart\/smartwisdomCommonNew script-path=https://raw.githubusercontent.com/dompling/Script/master/10010/index.js, timeout=10, tag=联通 headers
+
+[MITM] 
+hostname = coral2.quark.cn,drive-pc.quark.cn,mxsa.mxbc.net,gw2c-hw-open.longfor.com,osg-open.sgcc.com.cn,qmwebapi.qmai.cn,webapi.qmai.cn,userapi.qiekj.com,auth.alipan.com,auth.aliyundrive.com,*.amap.com,rewards.bing.com,app.moutai519.com.cn,,sytgate.jslife.com.cn,m.client.10010.com
