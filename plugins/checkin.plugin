@@ -4,7 +4,7 @@
 
 [Script]
 #javbus
-http-request ^https?:\/\/www\.javbus\.com\/forum\/home.php\?mod=, tag=巴士论坛获取Cookie, script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/javbus.js,requires-body=0
+http-request ^https?:\/\/www\.javbus\.com\/forum\/home.php\?mod= script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/javbus.js,requires-body=0,tag=巴士论坛获取Cookie, 
 
 #沪上阿姨
 http-request ^https:\/\/webapi.qmai.cn\/web\/catering\/crm\/points-info script-path=https://gist.githubusercontent.com/Sliverkiss/e427dc3164d0c008f8d282f180d7fc00/raw/280945016940399a593955e40ce0d4591a5292c5/hsay.js
