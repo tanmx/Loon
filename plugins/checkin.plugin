@@ -63,4 +63,5 @@ http-request ^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token scri
 http-request https:\/\/m\.client\.10010\.com\/serviceimportantbusiness\/smart\/smartwisdomCommonNew script-path=https://raw.githubusercontent.com/dompling/Script/master/10010/index.js, timeout=10, tag=联通 headers
 
 [MITM] 
-hostname =www.jindd.shop,www.javbus.com,bbs-api.iqoo.com,*.y.qq.com,tm-web.pin-dao.cn,coral2.quark.cn,drive-pc.quark.cn,mxsa.mxbc.net,gw2c-hw-open.longfor.com,osg-open.sgcc.com.cn,qmwebapi.qmai.cn,webapi.qmai.cn,userapi.qiekj.com,auth.alipan.com,auth.aliyundrive.com,*.amap.com,rewards.bing.com,app.moutai519.com.cn,,sytgate.jslife.com.cn,m.client.10010.com
+#禁用*.y.qq.com
+hostname =www.jindd.shop,www.javbus.com,bbs-api.iqoo.com,tm-web.pin-dao.cn,coral2.quark.cn,drive-pc.quark.cn,mxsa.mxbc.net,gw2c-hw-open.longfor.com,osg-open.sgcc.com.cn,qmwebapi.qmai.cn,webapi.qmai.cn,userapi.qiekj.com,auth.alipan.com,auth.aliyundrive.com,*.amap.com,rewards.bing.com,app.moutai519.com.cn,,sytgate.jslife.com.cn,m.client.10010.com
