@@ -3,6 +3,9 @@
 #!icon= https://github.com/tanmx/pic/blob/main/checkin/yuanshen.png?raw=true
 
 [Script]
+#顺丰
+http-response ^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/share\/weChat\/shareGiftReceiveRedirect.+ script-path=https://gist.githubusercontent.com/Sliverkiss/1fb1cf9cd7486d30752b1ba29b871e37/raw/sfsy.js, requires-body=true, timeout=60, tag=顺丰速运获取token
+
 #金多多
 http-response ^https:\/\/www\.jindd\.shop\/addons\/yun_shop\/api.php\?i=12&uuid=0&type=1&mid=(\d+)&version=v1.1.137&basic_info=1&route=member.member.wxJsSdkConfig script-path=https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/JinDD/JinDD.js, requires-body=true, timeout=60, tag=JinDD.js
 
@@ -64,4 +67,5 @@ http-request https:\/\/m\.client\.10010\.com\/serviceimportantbusiness\/smart\/s
 
 [MITM] 
 #禁用*.y.qq.com
-hostname =www.jindd.shop,www.javbus.com,bbs-api.iqoo.com,tm-web.pin-dao.cn,coral2.quark.cn,drive-pc.quark.cn,mxsa.mxbc.net,gw2c-hw-open.longfor.com,osg-open.sgcc.com.cn,qmwebapi.qmai.cn,webapi.qmai.cn,userapi.qiekj.com,auth.alipan.com,auth.aliyundrive.com,*.amap.com,rewards.bing.com,app.moutai519.com.cn,,sytgate.jslife.com.cn,m.client.10010.com
+hostname = mcs-mimp-web.sf-express.com,www.jindd.shop,www.javbus.com,bbs-api.iqoo.com,tm-web.pin-dao.cn,coral2.quark.cn,drive-pc.quark.cn,mxsa.mxbc.net,gw2c-hw-open.longfor.com,osg-open.sgcc.com.cn,qmwebapi.qmai.cn,webapi.qmai.cn,userapi.qiekj.com,auth.alipan.com,auth.aliyundrive.com,*.amap.com,rewards.bing.com,app.moutai519.com.cn,,sytgate.jslife.com.cn,m.client.10010.com
+ß
