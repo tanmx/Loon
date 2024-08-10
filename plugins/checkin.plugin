@@ -3,6 +3,9 @@
 #!icon= https://github.com/tanmx/pic/blob/main/checkin/yuanshen.png?raw=true
 
 [Script]
+#网上国网
+http-request ^https?:\/\/api\.example\.com\/electricity\/bill\/all script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/95598/95598.scriptable.js, requires-body=true, timeout=60, tag=网上国网小组件数据更新接口
+
 #顺丰
 http-response ^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/share\/weChat\/shareGiftReceiveRedirect.+ script-path=https://gist.githubusercontent.com/Sliverkiss/1fb1cf9cd7486d30752b1ba29b871e37/raw/sfsy.js, requires-body=true, timeout=60, tag=顺丰速运获取token
 
@@ -67,5 +70,5 @@ http-request https:\/\/m\.client\.10010\.com\/serviceimportantbusiness\/smart\/s
 
 [MITM] 
 #禁用*.y.qq.com
-hostname = mcs-mimp-web.sf-express.com,www.jindd.shop,www.javbus.com,bbs-api.iqoo.com,tm-web.pin-dao.cn,coral2.quark.cn,drive-pc.quark.cn,mxsa.mxbc.net,gw2c-hw-open.longfor.com,osg-open.sgcc.com.cn,qmwebapi.qmai.cn,webapi.qmai.cn,userapi.qiekj.com,auth.alipan.com,auth.aliyundrive.com,*.amap.com,rewards.bing.com,app.moutai519.com.cn,,sytgate.jslife.com.cn,m.client.10010.com
+hostname = api.example.com,mcs-mimp-web.sf-express.com,www.jindd.shop,www.javbus.com,bbs-api.iqoo.com,tm-web.pin-dao.cn,coral2.quark.cn,drive-pc.quark.cn,mxsa.mxbc.net,gw2c-hw-open.longfor.com,osg-open.sgcc.com.cn,qmwebapi.qmai.cn,webapi.qmai.cn,userapi.qiekj.com,auth.alipan.com,auth.aliyundrive.com,*.amap.com,rewards.bing.com,app.moutai519.com.cn,,sytgate.jslife.com.cn,m.client.10010.com
 ß
