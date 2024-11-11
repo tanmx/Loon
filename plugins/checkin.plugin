@@ -67,8 +67,7 @@ http-request ^https:\/\/sytgate\.jslife\.com\.cn\/core-gateway\/order\/carno\/pa
 http-request ^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, requires-body=true, timeout=10, tag=阿里云盘获取cookie
 
 #中国联通
-http-request https:\/\/m\.client\.10010\.com\/serviceimportantbusiness\/smart\/smartwisdomCommonNew script-path=https://raw.githubusercontent.com/dompling/Script/master/10010/index.js, timeout=10, tag=联通 headers
-
+http-request https:\/\/m\.client\.10010\.com\/(.*)\/smartwisdomCommon tag=联通 headers, script-path=https://raw.githubusercontent.com/dompling/Script/master/10010/index.js
 [MITM] 
 #禁用*.y.qq.com
 hostname = api.wsgw-rewrite.com, mcs-mimp-web.sf-express.com,www.jindd.shop,www.javbus.com,bbs-api.iqoo.com,tm-web.pin-dao.cn,coral2.quark.cn,drive-pc.quark.cn,mxsa.mxbc.net,gw2c-hw-open.longfor.com, webapi2.qmai.cn,webapi.qmai.cn,qmwebapi.qmai.cn,userapi.qiekj.com,auth.alipan.com,auth.aliyundrive.com,*.amap.com,rewards.bing.com,app.moutai519.com.cn,,sytgate.jslife.com.cn,m.client.10010.com
