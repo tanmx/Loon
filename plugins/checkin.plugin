@@ -3,6 +3,9 @@
 #!icon= https://github.com/tanmx/pic/blob/main/checkin/yuanshen.png?raw=true
 
 [Script]
+#chiphell
+http-request ^https?:\/\/www\.chiphell\.com\/forum\.php script-path=https://raw.githubusercontent.com/42vio/QuantumultX/main/scripts/chiphell.js, requires-body=true, timeout=60, tag=chiphell获取ck
+
 #奶茶王子,沪上阿姨,霸王茶姬
 http-response ^https:\/\/(webapi|webapi2)\.qmai\.cn\/web\/seller\/(oauth\/flash-sale-login|account\/login-minp) script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js, requires-body=true, timeout=60, tag=奶茶获取token
 http-request ^https:\/\/(webapi|webapi2|qmwebapi)\.qmai\.cn\/web\/(catering\/integral|cmk-center)\/sign\/(signIn|takePartInSign) script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js, requires-body=true, timeout=60, tag=奶茶获取token
@@ -70,4 +73,4 @@ http-request ^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token scri
 http-request https:\/\/m\.client\.10010\.com\/(.*)\/smartwisdomCommon tag=联通 headers, script-path=https://raw.githubusercontent.com/dompling/Script/master/10010/index.js
 [MITM] 
 #禁用*.y.qq.com
-hostname = api.wsgw-rewrite.com, mcs-mimp-web.sf-express.com,www.jindd.shop,www.javbus.com,bbs-api.iqoo.com,tm-web.pin-dao.cn,coral2.quark.cn,drive-pc.quark.cn,mxsa.mxbc.net,gw2c-hw-open.longfor.com, webapi2.qmai.cn,webapi.qmai.cn,qmwebapi.qmai.cn,userapi.qiekj.com,auth.alipan.com,auth.aliyundrive.com,*.amap.com,rewards.bing.com,app.moutai519.com.cn,,sytgate.jslife.com.cn,m.client.10010.com
+hostname = api.wsgw-rewrite.com, www.chiphell.com,mcs-mimp-web.sf-express.com,www.jindd.shop,www.javbus.com,bbs-api.iqoo.com,tm-web.pin-dao.cn,coral2.quark.cn,drive-pc.quark.cn,mxsa.mxbc.net,gw2c-hw-open.longfor.com, webapi2.qmai.cn,webapi.qmai.cn,qmwebapi.qmai.cn,userapi.qiekj.com,auth.alipan.com,auth.aliyundrive.com,*.amap.com,rewards.bing.com,app.moutai519.com.cn,,sytgate.jslife.com.cn,m.client.10010.com
