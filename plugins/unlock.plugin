@@ -1,8 +1,10 @@
 #!name=VIP UNLOCK
 #!desc=一些软件vip unlock
 #!icon= https://raw.githubusercontent.com/tanmx/Loon/main/images/unlock.png
+
 [Rewrite]
-^https:\/\/isi\.csan\.goodnotes.*\/v1\/subscribers\/[a-f0-9\-]{36}$ https://goodenotes6.lovebabyforever.workers.dev/ header
+#notability
+^https:\/\/isi\.csan\.goodnotes.*\/v1\/subscribers\/[a-f0-9\-]{36}$ header https://goodenotes6.lovebabyforever.workers.dev/
 
 [Script]
 #彩云天气vip token
