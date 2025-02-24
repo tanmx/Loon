@@ -4,7 +4,13 @@
 
 [Rewrite]
 #notability
-^https:\/\/isi\.csan\.goodnotes.*\/v1\/subscribers\/[a-f0-9\-]{36}$ header https://goodenotes6.lovebabyforever.workers.dev/
+#^https:\/\/isi\.csan\.goodnotes.*\/v1\/subscribers\/[a-f0-9\-]{36}$ header https://goodenotes6.lovebabyforever.workers.dev/
+#GN 和 nb
+# > Goodbility@ddgksf2013
+http-response ^https:\/\/isi\.csan.[a-z.]+\/.+\/(receipts$|subscribers\/[^/]+$) script-path=https://gist.githubusercontent.com/ddgksf2013/980624ef4722ee4ca805a74dc61ca9a3/raw/Goodbility.Vip.js, requires-body=true, timeout=60, tag=Goodbility.Vip1
+http-request ^https:\/\/isi\.csan.[a-z.]+\/.+\/(receipts|subscribers) script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/deleteHeader.js, timeout=60, tag=Goodbility.Vip2
+http-response ^https?:\/\/notability\.com\/global script-path=https://gist.githubusercontent.com/ddgksf2013/980624ef4722ee4ca805a74dc61ca9a3/raw/Goodbility.Vip.js, requires-body=true, timeout=60, tag=Goodbility.Vip3
+
 
 [Script]
 #彩云天气vip token
@@ -52,4 +58,4 @@ https:\/\/biz\.cyapi\.cn\/p\/v1\/entries - reject-dict
 https:\/\/ad\.cyapi\.cn\/* - reject
 
 [MITM]
-hostname = isi.csan.goodnotes.com.*, isi.csan.goodnotes.com, biz.caiyunapp.com,biz.cyapi.cn,cdn-w.caiyunapp.com,ad.cyapi.cn,wrapper.cyapi.cn,poetry.nanxiani.cn,180.153.*.*,*xima*,*xmcdn*,*.ximalaya.com,*.xmcdn.com,180.153.255.*,180.153.140.*,180.153.250.*,114.80.99.*,114.80.139.237,114.80.161.29,1.62.62.64,51*.com, api-drive.mypikpak.com, txh*.com,txk*.com,tx*.com,lchttpapi.xczim.com,lchttpapi.xczim.com,lchttpapi.xczim.com,lchttpapi.xczim.com,buy.itunes.apple.com,ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com,cutisanapi.imuuzi.com
+hostname = isi.csan.*, notability.com, biz.caiyunapp.com,biz.cyapi.cn,cdn-w.caiyunapp.com,ad.cyapi.cn,wrapper.cyapi.cn,poetry.nanxiani.cn,180.153.*.*,*xima*,*xmcdn*,*.ximalaya.com,*.xmcdn.com,180.153.255.*,180.153.140.*,180.153.250.*,114.80.99.*,114.80.139.237,114.80.161.29,1.62.62.64,51*.com, api-drive.mypikpak.com, txh*.com,txk*.com,tx*.com,lchttpapi.xczim.com,lchttpapi.xczim.com,lchttpapi.xczim.com,lchttpapi.xczim.com,buy.itunes.apple.com,ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com,cutisanapi.imuuzi.com
