@@ -1,0 +1,9 @@
+#!name=mdsq
+#!desc=mdsq
+#!icon=https://github.com/Toperlock/Quantumult/raw/main/icon/Doraemon/Doraemon-1030.png
+
+[Script]
+http-response https://d1skbu98kuldnf.cloudfront.net/api/app/media/play script-path=https://raw.githubusercontent.com/tanmx/Loon/main/scripts/madou/mdsq.js, requires-body=true, timeout=60, tag=mdsq
+
+[MITM]
+hostname = *.cloudfront.net
