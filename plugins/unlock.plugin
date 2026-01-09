@@ -19,14 +19,10 @@ http-response https?:\/\/biz\.(caiyunapp|cyapi)\.(com|cn)\/(membership_rights|v2
 http-request https:\/\/wrapper\.cyapi\.cn\/v1 script-path=https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/source/cyw_h.js, timeout=60 ,tag=cy
 
 #长相思
-http-response https://poetry.nanxiani.cn/api/User/loginUserInfo script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/changxiangsi.js, requires-body=true, timeout=60 ,tag=changxiangsi_4
+#http-response https://poetry.nanxiani.cn/api/User/loginUserInfo script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/changxiangsi.js, requires-body=true, timeout=60 ,tag=changxiangsi_4
 
 #pikpak 10T
 http-response ^https:\/\/api-drive\.mypikpak\.com\/vip\/v\d\/vip\/info script-path=https://raw.githubusercontent.com/tanmx/Loon/main/scripts/pikpak/PikPak.js, requires-body=true
-
-# > 糖心 Vlog 破解糖友至尊卡
-http-response ^https?:\/\/tx.*\.com\/h5\/user\/info$ script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/TangXinVloguCrack.js, requires-body=true, timeout=60 ,tag=TangXinVloguCrack_11
-http-request ^https?:\/\/tx.*\.com\/h5\/movie\/detail$ script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/TangXinVlogmCrack.js, requires-body=true, timeout=60 ,tag=TangXinVlogmCrack_12
 
 #西窗烛
 http-response ^https:\/\/lchttpapi\.xczim\.com requires-body=true,script-path=https://github.com/ddgksf2013/dev/raw/main/XiChuangZhuProCrack.js
@@ -36,9 +32,6 @@ http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ requires-body=
 
 #cutisan
 http-response ^https?:\/\/cutisanapi\.imuuzi\.com\/api\/(Index\/index|Home\/index) requires-body=true,script-path=https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/Cutisan.js
-
-#麻豆
-http-request ^https?:\/\/.*\/api\/app\/media\/m3u8\/.*\.m3u8 script-path=https://github.com/yqc007/QuantumultX/raw/master/mdsqallcrack.js
 
 [Rewrite]
 #喜马拉雅去广告

@@ -1,0 +1,11 @@
+#!name=莉景天气☆解锁会员权限
+#!desc=莉景天气☆解锁会员权限（2024-01-28）@ddgksf2013
+#!openUrl=https://apps.apple.com/cn/app/id1516766040
+#!author=ddgksf2013
+#!icon=https://raw.githubusercontent.com/tanmx/Loon/main/images/ljtq.png
+
+[Script]
+http-response ^https?:\/\/ljwapi\.baichuan\.tech\/(VIP\/GetState|Login\/Device|User\/GetPrivateUsers|Vip\/GetVipType) script-path=https://raw.githubusercontent.com/tanmx/Loon/main/scripts/ljtq/ljtq.js, requires-body=true ,tag=莉景天气
+
+[MITM]
+hostname = ljwapi.baichuan.tech
